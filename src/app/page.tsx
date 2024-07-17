@@ -1,4 +1,7 @@
 import Card from "@/components/Card";
+import StreeFood from "@/utils/FoodPlaces.json";
+import Resturants from "@/utils/Restaurant.json";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,27 +21,17 @@ export default function Home() {
           </div>
           <div className="self-center mt-4">
             <button className="bg-black text-white self-center px-7 py-2 rounded-2xl bg-opacity-50 font-semibold hover:bg-gray-500 hover:bg-opacity-50 ">
-              Help on Github
+              <Link href={"https://github.com/dhruvdabhi101/nadiad-wiki"}>
+                Star on Github
+              </Link>
             </button>
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-5 w-full py-5 px-16 sm:flex-row">
-        <Card
-            header="Street Food"
-            data={[{label: "Punjab Bakery", link: "#"},
-              {label: "Patel Bakery", link: "#"},
-              {label: "punjab bakery", link: "#"}
-            ]}
-          />
-        <Card
-            header="Restaurants"
-            data={[{label: "Blueberrys", link: "#"},
-              {label: "Bhagyoday", link: "#"},
-              {label: "Aquenous", link: "#"}
-            ]}
-          />
-        </div>
+      <div className="w-full py-5 px-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-4">
+        <Card header="🍔 Street Food" data={StreeFood.data} />
+        <Card header="🍽️ Restaurants" data={Resturants.data} />
+      </div>
     </main>
   );
 }

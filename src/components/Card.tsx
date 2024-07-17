@@ -11,7 +11,7 @@ type CardProps = {
 
 const Card = (props: CardProps) => {
     return (
-        <div className="flex flex-col border border-gray-200 rounded-md w-[90%] self-center">
+        <div className="flex flex-col border border-gray-200 self-center sm:self-auto rounded-md ">
             <div className="border-b-2 w-full py-2 px-3">
                 <p className="font-semibold">{props.header}</p>
             </div>
@@ -20,7 +20,7 @@ const Card = (props: CardProps) => {
                     return (
                         <div className="flex gap-3 justify-start">
                             <span>{idx+1}.</span>
-                        <Link href={item.link} className="underline">{item.label}</Link>
+                        <Link href={item.link} className="underline underline-offset-3">{item.label} &rarr;</Link>
                         </div>
                     )
                 })}
