@@ -1,3 +1,5 @@
+import Card from "@/components/Card";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center ">
@@ -21,6 +23,22 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="flex flex-col gap-5 w-full py-5 px-16 sm:flex-row">
+        <Card
+            header="Street Food"
+            data={[{label: "Punjab Bakery", link: "#"},
+              {label: "Patel Bakery", link: "#"},
+              {label: "punjab bakery", link: "#"}
+            ]}
+          />
+        <Card
+            header="Restaurants"
+            data={[{label: "Blueberrys", link: "#"},
+              {label: "Bhagyoday", link: "#"},
+              {label: "Aquenous", link: "#"}
+            ]}
+          />
+        </div>
     </main>
   );
 }
