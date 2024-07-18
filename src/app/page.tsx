@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center ">
-      <div className="flex flex-row w-[75%] self-center p-4 font-semibold text-xl">
+      <div className="flex flex-row w-[90%] self-center p-4 font-semibold text-xl">
         <span className="text-2xl mr-2">🎇</span>nadiad.
         <span className="text-gray-400">wiki</span>
       </div>
@@ -31,7 +31,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full py-10 px-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="py-10 w-[90%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         <Card header="🍔 Street Food" data={StreeFood.data} />
         <Card header="🍽️ Restaurants" data={Resturants.data} />
         <Card header="🍵 Cafes" data={Cafe.data} />
