@@ -20,7 +20,7 @@ const Card = (props: CardProps) => {
                     return (
                         <div className="flex gap-3 justify-start">
                             <span>{idx+1}.</span>
-                        <Link href={item.link} className="underline underline-offset-3">{item.label} &rarr;</Link>
+                        <Link href={item.link} className="underline underline-offset-3 hover:scale-110 hover:transition-all hover:ease-in-out duration-200">{item.label} &rarr;</Link>
                         </div>
                     )
                 })}
