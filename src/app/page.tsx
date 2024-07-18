@@ -3,6 +3,7 @@ import StreeFood from "@/utils/FoodPlaces.json";
 import Resturants from "@/utils/Restaurant.json";
 import Cafe from "@/utils/Cafe.json";
 import Drinks from "@/utils/Drinks.json";
+import Temples from "@/utils/Temples.json";
 import Link from "next/link";
 
 export default function Home() {
@@ -35,6 +36,7 @@ export default function Home() {
         <Card header="🍽️ Restaurants" data={Resturants.data} />
         <Card header="🍵 Cafes" data={Cafe.data} />
         <Card header="☕ Cold/Hot Drinks" data={Drinks.data} />
+        <Card header="🛕 Temples" data={Temples.data} />
       </div>
     </main>
   );
