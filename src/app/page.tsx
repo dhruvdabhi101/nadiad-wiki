@@ -1,6 +1,7 @@
 import Card from "@/components/Card";
 import StreeFood from "@/utils/FoodPlaces.json";
 import Resturants from "@/utils/Restaurant.json";
+import Cafe from "@/utils/Cafe.json";
 import Link from "next/link";
 
 export default function Home() {
@@ -28,9 +29,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full py-5 px-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-4">
+      <div className="w-full py-10 px-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         <Card header="🍔 Street Food" data={StreeFood.data} />
         <Card header="🍽️ Restaurants" data={Resturants.data} />
+        <Card header="🍵 Cafes" data={Cafe.data} />
       </div>
     </main>
   );

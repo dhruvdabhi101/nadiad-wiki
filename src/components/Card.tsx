@@ -11,7 +11,7 @@ type CardProps = {
 
 const Card = (props: CardProps) => {
     return (
-        <div className="flex flex-col border border-gray-200 self-center sm:self-auto rounded-md ">
+        <div className="flex flex-col border border-gray-200 self-center sm:self-auto rounded-md">
             <div className="border-b-2 w-full py-2 px-3">
                 <p className="font-semibold">{props.header}</p>
             </div>
