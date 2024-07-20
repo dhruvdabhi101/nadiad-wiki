@@ -10,8 +10,7 @@ The main goal to build this project was to show new people the way around nadiad
 
 ### Prerequisites
 
-- Node.js
-- React.js
+- NextJS
 - Tailwind
 - npm (Node Package Manager)
 - Git
